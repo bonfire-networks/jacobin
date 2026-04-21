@@ -29,3 +29,10 @@ config :bonfire, :ui,
 
 config :bonfire_social, Bonfire.Social.Pins, modularity: true
 config :bonfire_ui_reactions, Bonfire.UI.Reactions.PinActionLive, modularity: true
+
+# Ghost webhook verification needs the raw JSON body for HMAC. BodyReader
+# wraps `ActivityPub.Web.Plugs.DigestPlug.read_body/2` (so AP digests keep
+# working) and stashes the raw body on JSON requests.
+config :bonfire_ui_common,
+       :body_reader,
+       {Bonfire.Ghost.BodyReader, :read_body, []}

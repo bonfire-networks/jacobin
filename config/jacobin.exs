@@ -5,6 +5,15 @@ import Config
 # Please note that most of these are defaults meant to be overridden by instance admins in Settings rather than edited here
 config :bonfire, :ui,
   hide_app_switcher: true,
+  auth: [
+    email_theme: [
+      primary: "#e63027",
+      primary_content: "#ffffff",
+      body_bg: "#fbf3e9",
+      body_text: "#0a0a0a",
+      muted: "#5c5c5c"
+    ]
+  ],
   font_family: "Lateral",
   font_families: [
     "Lateral",

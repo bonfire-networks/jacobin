@@ -1,20 +1,20 @@
 /* Jacobin flavour custom themes */
 
-/* Jacobin Light - bold red, clean white, editorial */
+/* Jacobin Light - red on pink, editorial */
 @plugin "daisyui/theme" {
   name: "jacobin";
   default: false;
   prefersdark: false;
   color-scheme: light;
 
-  /* base colors - #FFFFFF / #FFF7F7 */
-  --color-base-100: oklch(100% 0 0);
-  --color-base-200: oklch(97.8% 0.008 15);
-  --color-base-300: oklch(92% 0.005 0);
+  /* base colors - pink #FFF7F7, slightly darker pink #FFF0F0, stroke #FFA0A0 */
+  --color-base-100: #FFF7F7;
+  --color-base-200: #FFF0F0;
+  --color-base-300: #FFA0A0;
   --color-base-content: oklch(18% 0.01 0);
 
   /* primary - Jacobin red #FF0000 */
-  --color-primary: oklch(62.8% 0.257 29.2);
+  --color-primary: #FF0000;
   --color-primary-content: oklch(100% 0 0);
 
   /* secondary - darker red for depth #B81C15 */
@@ -22,7 +22,7 @@
   --color-secondary-content: oklch(99% 0.002 0);
 
   /* accent - same #FF0000 red */
-  --color-accent: oklch(62.8% 0.257 29.2);
+  --color-accent: #FF0000;
   --color-accent-content: oklch(100% 0 0);
 
   /* neutral - near black */
@@ -39,17 +39,17 @@
   --color-error: oklch(55% 0.22 27);
   --color-error-content: oklch(99% 0.002 27);
 
-  /* border radius - sharp/editorial feel */
-  --radius-selector: 1.5rem;
-  --radius-field: 0.5rem;
-  --radius-box: 0.5rem;
+  /* border radius - 20px */
+  --radius-selector: 1.25rem;
+  --radius-field: 1.25rem;
+  --radius-box: 1.25rem;
 
   /* base sizes */
   --size-selector: 0.25rem;
   --size-field: 0.25rem;
 
-  /* border size */
-  --border: 1px;
+  /* border size - 0.5px stroke */
+  --border: 0.5px;
 
   /* effects */
   --depth: 0;

@@ -21,6 +21,12 @@ defmodule Bonfire.Web.Views.DashboardLive do
           Enum.filter(
             [
               Settings.get(
+                [Bonfire.Web.Views.DashboardLive, :include, :getting_started],
+                true,
+                current_user: current_user
+              ) &&
+                {Bonfire.UI.Social.WidgetGettingStartedLive, [type: Surface.LiveComponent]},
+              Settings.get(
                 [Bonfire.Web.Views.DashboardLive, :include, :instance_status],
                 true,
                 current_user: current_user

@@ -39,6 +39,9 @@ config :bonfire, :ui,
 config :bonfire_social, Bonfire.Social.Pins, modularity: true
 config :bonfire_ui_reactions, Bonfire.UI.Reactions.PinActionLive, modularity: true
 
+# enable marking comment as answer?
+config :bonfire_social, Bonfire.Social.Answers, modularity: :disabled
+
 # Getting-started checklist shown to new users in the sidebar widget.
 # Each entry is either a key from
 # `Bonfire.UI.Social.WidgetGettingStartedLive.actions_registry/0` or a custom

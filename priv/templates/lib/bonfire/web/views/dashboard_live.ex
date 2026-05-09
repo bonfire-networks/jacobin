@@ -131,7 +131,7 @@ defmodule Bonfire.Web.Views.DashboardLive do
 
        page_header: false,
        page_header_aside: [
-         {Bonfire.UI.Me.DashboardConfigDropdownLive, [scope: :user]}
+         # {Bonfire.UI.Me.DashboardConfigDropdownLive, [scope: :user]}
        ],
        default_feed: default_feed,
        is_guest?: is_guest?,

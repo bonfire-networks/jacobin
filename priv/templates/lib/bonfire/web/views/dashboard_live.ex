@@ -95,6 +95,14 @@ defmodule Bonfire.Web.Views.DashboardLive do
              [limit: 5, widget_title: l("Top discussions")]},
           current_user &&
             Settings.get(
+              [Bonfire.Web.Views.DashboardLive, :include, :polls_closing_soon],
+              true,
+              current_user: current_user
+            ) &&
+            {Bonfire.Poll.Web.WidgetPollsClosingSoonLive,
+             [limit: 3, widget_title: l("Polls closing soon")]},
+          current_user &&
+            Settings.get(
               [Bonfire.Web.Views.DashboardLive, :include, :suggested_profiles],
               true,
               current_user: current_user

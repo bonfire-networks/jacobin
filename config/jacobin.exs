@@ -4,6 +4,13 @@ import Config
 
 # Please note that most of these are defaults meant to be overridden by instance admins in Settings rather than edited here
 config :bonfire, :ui,
+  # Make the Jacobin themes the instance default look (deep-merged into the
+  # `theme:` keyword from bonfire_ui_common.exs, so instance_icon/tagline/etc.
+  # are preserved). Admins can still override per-instance in Settings.
+  theme: [
+    instance_theme_light: "jacobin",
+    instance_theme: "jacobin-dark"
+  ],
   hide_app_switcher: true,
   auth: [
     email_theme: [
@@ -30,10 +37,26 @@ config :bonfire, :ui,
     label: "New label"
   ],
   themes_light: [
-    "jacobin"
+    "jacobin",
+    "light",
+    # primary-color comparison themes (temporary)
+    "indigo",
+    "blue",
+    "violet",
+    "teal",
+    "green",
+    "magenta"
   ],
   themes_dark: [
-    "jacobin-dark"
+    "jacobin-dark",
+    "dark",
+    # primary-color comparison themes (temporary)
+    "indigo-dark",
+    "blue-dark",
+    "violet-dark",
+    "teal-dark",
+    "green-dark",
+    "magenta-dark"
   ]
 
 # config :bonfire_social, Bonfire.Social.Pins, modularity: true

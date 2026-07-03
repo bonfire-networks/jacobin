@@ -47,6 +47,9 @@ copy_dir_with_prompt "$SOURCE_DIR/priv/repo/" "priv/repo/"
 echo -e "\nCopying custom templates..."
 copy_dir_with_prompt "$SOURCE_DIR/priv/templates/lib/" "lib/"
 
+echo -e "\nCopying static assets..."
+copy_dir_with_prompt "$SOURCE_DIR/priv/static/" "priv/static/"
+
 echo -e "\nInstalling flavour themes..."
 # Find the custom_themes.css file
 CUSTOM_THEMES=""

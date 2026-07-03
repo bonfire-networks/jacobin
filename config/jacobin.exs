@@ -59,6 +59,30 @@ config :bonfire, :ui,
     "magenta-dark"
   ]
 
+config :bonfire_ui_common, Bonfire.UI.Common.AvatarLive,
+  generated_avatar_paths: [
+    "/images/avatars/new-profiles-02.jpg",
+    "/images/avatars/new-profiles-20.jpg",
+    "/images/avatars/new-red-profiles-05.jpg",
+    "/images/avatars/new-red-profiles-12.jpg",
+    "/images/avatars/new-red-profiles-21.jpg",
+    "/images/avatars/profiles-01.jpg",
+    "/images/avatars/profiles-03.jpg",
+    "/images/avatars/profiles-04.jpg",
+    "/images/avatars/profiles-09.jpg",
+    "/images/avatars/profiles-10.jpg",
+    "/images/avatars/profiles-11.jpg",
+    "/images/avatars/profiles-14.jpg",
+    "/images/avatars/profiles-16.jpg",
+    "/images/avatars/profiles-17.jpg",
+    "/images/avatars/profiles-19.jpg",
+    "/images/avatars/profiles.jpg",
+    "/images/avatars/red-profiles-06.jpg",
+    "/images/avatars/red-profiles-07.jpg",
+    "/images/avatars/red-profiles-15.jpg",
+    "/images/avatars/red-profiles-18.jpg"
+  ]
+
 # config :bonfire_social, Bonfire.Social.Pins, modularity: true
 # config :bonfire_ui_reactions, Bonfire.UI.Reactions.PinActionLive, modularity: true
 

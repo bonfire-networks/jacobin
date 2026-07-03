@@ -18,6 +18,7 @@ defmodule Mix.Tasks.Jacobin.Install do
     |> Igniter.compose_task(Mix.Tasks.Community.Install, [])
     # then we run custom tasks for this flavour
     |> Helpers.igniter_copy(Path.join(app_dir, "priv/templates/lib/"), "lib/")
+    |> Helpers.igniter_copy(Path.join(app_dir, "priv/static/"), "priv/static/")
     |> Helpers.igniter_copy(
       Path.wildcard(Path.join(app_dir, "deps.*")),
       "config/current_flavour/"

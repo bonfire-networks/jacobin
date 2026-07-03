@@ -48,7 +48,7 @@
 
   /* base sizes */
   --size-selector: 0.25rem;
-  --size-field: 3.5px; /* btn-md = *10 = 35px, btn-sm = *8 = 28px */
+  --size-field: 3.7px; /* btn-md = *10 = 35px, btn-sm = *8 = 28px */
 
   /* border size — Figma uses 0.7px strokes everywhere (cards, buttons, badges, avatar ring) */
   --border: 0.7px;

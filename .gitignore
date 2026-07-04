@@ -35,6 +35,12 @@ npm-debug.log
 
 # Since we are building assets from assets/
 /priv/static/
+!/priv/static/
+!/priv/static/fonts/
+!/priv/static/fonts/**
+!/priv/static/images/
+!/priv/static/images/avatars/
+!/priv/static/images/avatars/**
 
 # App and user data
 /data/

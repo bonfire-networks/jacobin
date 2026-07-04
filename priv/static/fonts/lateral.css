@@ -1,0 +1,56 @@
+/* lateral-standard - regular */
+@font-face {
+	font-family: "Lateral";
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	font-synthesis: none;
+	src: url("/fonts/lateral-standard-regular.woff2") format("woff2");
+}
+@font-face {
+	font-family: "Lateral";
+	font-style: italic;
+	font-weight: 400;
+	font-display: swap;
+	font-synthesis: none;
+	src: url("/fonts/lateral-standard-regularitalic.woff2") format("woff2");
+}
+
+/* lateral-standard - medium */
+@font-face {
+	font-family: "Lateral";
+	font-style: normal;
+	font-weight: 500;
+	font-display: swap;
+	font-synthesis: none;
+	src: url("/fonts/lateral-standard-medium.woff2") format("woff2");
+}
+@font-face {
+	font-family: "Lateral";
+	font-style: italic;
+	font-weight: 500;
+	font-display: swap;
+	font-synthesis: none;
+	src: url("/fonts/lateral-standard-mediumitalic.woff2") format("woff2");
+}
+
+/* Lateral-Bold (700) is intentionally remapped to Medium (500) — Bold reads
+   too bulky in the Jacobin UI. Heavier weights (800/900) fall back to Medium
+   via the closest-match rule, and font-synthesis: none prevents the browser
+   from faking a heavier weight. */
+@font-face {
+	font-family: "Lateral";
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	font-synthesis: none;
+	src: url("/fonts/lateral-standard-medium.woff2") format("woff2");
+}
+@font-face {
+	font-family: "Lateral";
+	font-style: italic;
+	font-weight: 700;
+	font-display: swap;
+	font-synthesis: none;
+	src: url("/fonts/lateral-standard-mediumitalic.woff2") format("woff2");
+}

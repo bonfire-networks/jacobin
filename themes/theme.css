@@ -1,25 +1,19 @@
 /* Jacobin flavour custom themes */
 
-/* Jacobin Light - bold red on white, editorial.
-   Tokens are the authoritative values from the Figma handoff
-   (design_handoff_jacobin_theme/jacobin-theme.css) — exact hex, do not "tidy". */
 @plugin "daisyui/theme" {
   name: "jacobin";
   default: false;
   prefersdark: false;
   color-scheme: light;
 
-  /* surfaces: white cards on a pale-pink page, lighter pink rails/hover */
   --color-base-100: #ffffff;   /* cards            */
   --color-base-200: #fff7f7;   /* page background  */
   --color-base-300: #ffeaea;   /* rails / hover / edge gutters (Figma rail surface) */
   --color-base-content: #231f20;
 
-  /* primary - Jacobin red #FF0000 */
   --color-primary: #ff0000;
   --color-primary-content: #ffffff;
 
-  /* secondary - muted red used for borders, @handles and secondary text */
   --color-secondary: #ffa0a0;
   --color-secondary-content: #231f20;
 
@@ -34,7 +28,7 @@
   /* state colors */
   --color-info: #231f20;
   --color-info-content: #ffffff;
-  --color-success: #00e23a;    /* "OFFEN" — tuned from Figma's #00ff40 for contrast */
+  --color-success: #00e23a;
   --color-success-content: #06210f;
   --color-warning: #ffb020;
   --color-warning-content: #231f20;
@@ -46,70 +40,11 @@
   --radius-field: 9999px;
   --radius-box: 0.75rem;
 
-  /* base sizes */
   --size-selector: 0.25rem;
   --size-field: 3.7px; /* btn-md = *10 = 35px, btn-sm = *8 = 28px */
 
-  /* border size — Figma uses 0.7px strokes everywhere (cards, buttons, badges, avatar ring) */
   --border: 0.7px;
-
-  /* effects - flat editorial, no depth or surface noise */
   --depth: 0;
   --noise: 0;
 }
 
-/* Jacobin Dark - red on dark, editorial */
-@plugin "daisyui/theme" {
-  name: "jacobin-dark";
-  default: false;
-  prefersdark: true;
-  color-scheme: dark;
-
-  /* base colors - near-black with slight warm tint */
-  --color-base-100: oklch(20% 0.008 15);
-  --color-base-200: oklch(16% 0.006 15);
-  --color-base-300: oklch(25% 0.01 15);
-  --color-base-content: oklch(93% 0.005 0);
-
-  /* primary - brighter red for dark mode legibility */
-  --color-primary: oklch(60% 0.22 27);
-  --color-primary-content: oklch(99% 0.002 0);
-
-  /* secondary - lighter red accent */
-  --color-secondary: oklch(52% 0.19 27);
-  --color-secondary-content: oklch(99% 0.002 0);
-
-  /* accent - red family */
-  --color-accent: oklch(60% 0.22 27);
-  --color-accent-content: oklch(99% 0.002 0);
-
-  /* neutral - dark gray */
-  --color-neutral: oklch(32% 0.008 15);
-  --color-neutral-content: oklch(93% 0.005 0);
-
-  /* state colors */
-  --color-info: oklch(68% 0.07 240);
-  --color-info-content: oklch(15% 0.01 240);
-  --color-success: oklch(68% 0.14 155);
-  --color-success-content: oklch(15% 0.01 155);
-  --color-warning: oklch(78% 0.12 70);
-  --color-warning-content: oklch(20% 0.04 70);
-  --color-error: oklch(60% 0.22 27);
-  --color-error-content: oklch(99% 0.002 27);
-
-  /* border radius - same as light */
-  --radius-selector: 1.5rem;
-  --radius-field: 0.5rem;
-  --radius-box: 0.5rem;
-
-  /* base sizes */
-  --size-selector: 0.25rem;
-  --size-field: 3.5px; /* btn-md = *10 = 35px, btn-sm = *8 = 28px */
-
-  /* border size */
-  --border: 1px;
-
-  /* effects */
-  --depth: 0;
-  --noise: 0.5;
-}

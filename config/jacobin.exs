@@ -89,6 +89,14 @@ config :bonfire_ui_common, Bonfire.UI.Common.AvatarLive,
 # enable marking comment as answer?
 config :bonfire_social, Bonfire.Social.Answers, modularity: :disabled
 
+# TODO: replace placeholder copy and URL with the real ones
+config :bonfire_ui_social, Bonfire.UI.Social.RestrictedContentLive,
+  modularity: true,
+  title: "This post is for members",
+  message: "Upgrade your membership to read this post and everything else on Jacobin.",
+  cta_label: "Upgrade",
+  cta_url: "https://jacobin.de/abo"
+
 # Getting-started checklist shown to new users in the sidebar widget.
 # Each entry is a key from
 # `Bonfire.UI.Social.WidgetGettingStartedLive.actions_registry/0`; the copy

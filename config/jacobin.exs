@@ -9,7 +9,7 @@ config :bonfire, :ui,
   # are preserved). Admins can still override per-instance in Settings.
   theme: [
     instance_theme_light: "jacobin",
-    instance_theme: "jacobin-dark"
+    instance_theme: "jacobin"
   ],
   hide_app_switcher: true,
   auth: [
@@ -38,25 +38,10 @@ config :bonfire, :ui,
   ],
   themes_light: [
     "jacobin",
-    "light",
-    # primary-color comparison themes (temporary)
-    "indigo",
-    "blue",
-    "violet",
-    "teal",
-    "green",
-    "magenta"
+    "light"
   ],
   themes_dark: [
-    "jacobin-dark",
-    "dark",
-    # primary-color comparison themes (temporary)
-    "indigo-dark",
-    "blue-dark",
-    "violet-dark",
-    "teal-dark",
-    "green-dark",
-    "magenta-dark"
+    "dark"
   ]
 
 config :bonfire_ui_common, Bonfire.UI.Common.AvatarLive,

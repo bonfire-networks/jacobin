@@ -42,7 +42,8 @@
 
   --size-selector: 0.25rem;
   --size-field: 3.7px; /* btn-md = *10 = 35px, btn-sm = *8 = 28px */
-
+  --spacing-page-header: 80px;
+  --text-display: clamp(20px, 18.6px + 0.36vw, 23px);
   --border: 0.7px;
   --depth: 0;
   --noise: 0;

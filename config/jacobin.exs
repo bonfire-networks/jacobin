@@ -9,7 +9,9 @@ config :bonfire, :ui,
   # are preserved). Admins can still override per-instance in Settings.
   theme: [
     instance_theme_light: "jacobin",
-    instance_theme: "jacobin"
+    instance_theme: "jacobin",
+    # "powered by" credit in the footer
+    powered_by: [name: "Jacobin.social + Bonfire", url: "https://jacobin.de/social"]
   ],
   hide_app_switcher: true,
   auth: [

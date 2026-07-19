@@ -93,8 +93,7 @@ config :bonfire_ui_social, Bonfire.UI.Social.RestrictedContentLive,
 config :bonfire_ui_social, Bonfire.UI.Social.WidgetGettingStartedLive,
   actions: [:profile, :first_post, :first_follow, :read_coc, :wishes],
   code_of_conduct_path: "/conduct",
-  # TODO: replace placeholder with the real form URL once decided
-  wishes_url: "https://example.com/wishes"
+  wishes_url: "https://heyform-mglx.srv1627781.hstgr.cloud/form/7JpSZJ6H"
 
 # Ghost webhook verification needs the raw JSON body for HMAC. BodyReader
 # wraps `ActivityPub.Web.Plugs.DigestPlug.read_body/2` (so AP digests keep

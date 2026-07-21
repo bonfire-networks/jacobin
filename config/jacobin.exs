@@ -15,6 +15,7 @@ config :bonfire, :ui,
   ],
   hide_app_switcher: true,
   auth: [
+    email_signature: "Deine Jacobin-Redaktion",
     email_theme: [
       primary: "#e63027",
       primary_content: "#ffffff",

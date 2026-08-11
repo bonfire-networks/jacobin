@@ -88,6 +88,8 @@ defmodule Bonfire.Web.Views.DashboardLive do
               module: Bonfire.UI.Reactions.WidgetInstancePinnedCarouselLive,
               data: [
                 title: l("Spotlight"),
+                title_class:
+                  "flex items-center justify-between pb-card text-xs font-normal uppercase tracking-wide text-base-content px-card",
                 wrapper_class: "p-card border-t-hair border-secondary"
               ],
               type: Surface.LiveComponent

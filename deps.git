@@ -10,6 +10,7 @@ bonfire_messages = "https://github.com/bonfire-networks/bonfire_messages"
 bonfire_ui_messages = "https://github.com/bonfire-networks/bonfire_ui_messages"
 
 bonfire_ui_reactions = "https://github.com/bonfire-networks/bonfire_ui_reactions"
+bonfire_ui_console = "https://github.com/bonfire-networks/bonfire_ui_console"
 bonfire_ui_groups = "https://github.com/bonfire-networks/bonfire_ui_groups"
 bonfire_ui_topics = "https://github.com/bonfire-networks/bonfire_ui_topics"
 bonfire_classify = "https://github.com/bonfire-networks/bonfire_classify"

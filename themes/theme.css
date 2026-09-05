@@ -38,6 +38,7 @@
   /* shape: full-pill fields & buttons, softly-rounded cards */
   --radius-selector: 9999px;
   --radius-field: 9999px;
+  --radius-button: 9999px;
   --radius-box: 0.75rem;
 
   --size-selector: 0.25rem;

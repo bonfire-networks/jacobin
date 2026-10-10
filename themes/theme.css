@@ -45,7 +45,7 @@
   --size-field: 3.7px; /* btn-md = *10 = 35px, btn-sm = *8 = 28px */
   --spacing-page-header: 80px;
   --text-xl: clamp(20px, 18.6px + 0.36vw, 23px); /* fluid page titles */
-  --border: 0.7px;
+  --border: 1px;
   --depth: 0;
   --noise: 0;
 }
